@@ -2,7 +2,12 @@
 
 echo running $0
 
-if [ -z "(service wpa_supplicant status | grep running)" ]; then
+if [ -z "`which macchanger`" ]; then
+	echo without macchanger software... doing nothing
+	exit 0
+fi
+
+if [ -z "`service wpa_supplicant status | grep running`" ]; then
 	echo without wpa_supplicant
 	wpadown=no
 else

@@ -1,13 +1,18 @@
 # maccloack
-Cloack MAC address: hide the MAC address setting a random one.
+Cloack MAC address: hide the MAC address setting a random one. 
 
-Change exec permission:
+If dont have the macchanger program:
+
+	apt-get install macchanger
+
+Change exec permission to scripts:
 
 	chmod +x *.sh
 
-And execute the main...
+Execute the main...
 
 	./main.sh
+
 
 To set it on init.d:
 
